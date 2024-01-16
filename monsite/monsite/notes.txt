@@ -1,0 +1,28 @@
+
+DJANGO URL : http://127.0.0.1:8000/
+
+COMMANDES GENERALES DJANGO DANS LA CONSOLE:
+    
+    Lancement du serveur django : 
+        python manage.py runserver
+    Arret du serveur django:
+        CTRL + C
+
+COMMANDE DJANGO DATABASE DANS LA CONSOLE:
+    Démarrer interface pour créer des objet SQL:
+        python manage.py shell
+    pour fermer l'interface shell:
+        exit()
+    Commande pour importer la table de donnée crée (Item dans l'exemple issue de models.py):
+        from food.models import Item
+    Pour créer un objet avec ses caractéristiques:
+        a = Item(item_name="Pizza",item_desc="Cheezy Pizza",item_price=20)
+        +
+        a.save()
+    
+Création du profil superuser pour accéder à la page ADMIN du server DJANGO:
+    python manage.py createsuperuser
+        nom : aabt
+        mail : kkoonneekkeeiittaa@gmail.com 
+        pw : abcd1234
+
